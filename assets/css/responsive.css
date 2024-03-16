@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 768px){
+    .main-banner-item .content-box{
+        width: 95%;
+    }
+    .main-banner-item .content-box .desc{
+        width: 100%;
+    }
+    .top-nav .text-box p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 576px){
+    
+}
+@media only screen and (max-width: 400px){
+    .main-banner-item .content-box{
+        bottom: unset;
+        top: 90%;
+    }
+    .main-banner-item .content-box .primary-btn{
+        width: 100%;
+    }
+    
+}
