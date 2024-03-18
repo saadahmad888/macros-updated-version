@@ -219,8 +219,8 @@ a {
 }
 
 .section-heading h2 {
-    color: var(--green);
-    font-size: 45px;
+    color: var(--dark-pink);
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -237,7 +237,7 @@ a {
     width: 100px;
     height: 4px;
     border-radius: 50rem;
-    background-color: var(--wa);
+    background-color: var(--pink);
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -470,6 +470,162 @@ a {
     width: 40px;
 }
 
+/* =======================================================================
+    Stat section CSS
+========================================================================== */
+.stats-sec{
+    padding: 70px 0;
+}
+.stat-item{
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+.stat-item svg{
+    margin-bottom: 20px;
+    transition: 0.3s all ease;
+}
+.stat-item .desc{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+}
+.stat-item:hover svg{
+    transform: scale(1.2);
+}
+
+/* =======================================================================
+    Our Favourite section CSS
+========================================================================== */
+.our-favourite-sec{
+    padding: 100px 0 90px 0;
+}
+.favourite-item{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.favourite-item .tag-box{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+.favourite-item .tag-box .tag{
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+    margin-bottom: 0;
+    width: fit-content;
+    border-radius: 50rem;
+    padding: 2px 20px;
+}
+.favourite-item .tag-box .tag.pink{
+    background-color: var(--dark-pink);
+    color: var(--white);
+}
+.favourite-item .img-box img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+.favourite-item .content-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 30px;
+    background: rgb(255,255,255);
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s all ease;
+    transform: translateY(150px);
+    width: 100%;
+}
+.favourite-item:hover .content-box{
+    transform: translateY(0);
+}
+.favourite-item .content-box .title{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.favourite-item .content-box .price-box span{
+    color: var(--pink);
+    font-size: 20px;
+    font-weight: 600;
+}
+.favourite-item .content-box .price-box .strike{
+    text-decoration: line-through;
+    color: #8C8E94;
+    font-size: 12px;
+    font-weight: 400;
+}
+.favourite-item .content-box .btn-box{
+    transition: 0.3s all ease;
+    transform: translateX(-1000px);
+}
+.favourite-item .content-box:hover .btn-box{
+    transition: 0.3s all ease;
+    transform: translateX(0px);
+}
+.favourite-item .content-box .btn-box .next-button:before {
+    border-color: var(--black);
+}
+.favourite-item .content-box .btn-box .next-button-elem{
+    fill: var(--black);
+}
+
+/* =======================================================================
+    New Item section CSS
+========================================================================== */
+.new-item-sec{
+    padding: 100px 0 70px 0;
+}
+.new-item-sec .img-box img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.new-item-sec .content-box{
+    background-color: #fff;
+    padding: 20px 30px;
+    transform: translateX(-100px);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border-radius: 15px;
+    transition: 0.3s all ease;
+}
+.new-item-sec .content-box:hover{
+    transform: translateX(-50px);
+}
+.new-item-sec .content-box .title{
+    color: var(--dark-pink);
+    font-size: 30px;
+    font-weight: 700;
+}
+.new-item-sec .content-box .text{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.new-item-sec .content-box .primary-btn{
+    border-radius: 50rem;
+}
 
 
 
@@ -478,6 +634,440 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+/* =======================================================================
+    Meal Plan section CSS
+========================================================================== */
+.meal-paln-sec{
+    padding: 100px 0;
+}
+
+
+
+.meal-paln-item{
+    position: relative;
+    overflow: hidden;
+}
+.meal-paln-item .img-box img{
+    filter: brightness(0.7);
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+.meal-paln-item .content-box{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    transition: 0.3s all ease;
+    transform: translateY(60px);
+}
+.meal-paln-item:hover .content-box{
+    transform: translateY(0px);
+}
+.meal-paln-item .content-box .title{
+    display: block;
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.meal-paln-item .content-box .desc{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.meal-paln-item .btn-box{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    padding: 20px 30px;
+    transition: 0.3s all ease;
+    transform: translateY(100px) translateX(100px);
+}
+.meal-paln-item:hover .btn-box{
+    transform: translate(0) translateX(0);
+}
+#meal-plan-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#meal-plan-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
+
+/* =======================================================================
+    Snack and Drinks section CSS
+========================================================================== */
+.snacks-and-drinks-sec{
+    padding: 70px 0;
+}
+.snack-card{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.snack-card .img-box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.snack-card .content-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    padding: 20px 30px 10px 30px;
+    transform: translateY(100px);
+    transition: 0.3s all ease;
+}
+.snack-card:hover .content-box{
+    transform: translateY(0px);
+}
+.snack-card .content-box .title{
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.next-button {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    transform: rotate(180deg);
+}
+
+.next-button:before,
+.next-button:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 7px;
+}
+
+.next-button:before {
+    border: 4px solid #f0eeef;
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.next-button:after {
+    border: 4px solid var(--pink);
+    transform: scale(1.3);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+}
+
+.next-button:hover:before,
+.next-button:focus:before {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.next-button:hover:after,
+.next-button:focus:after {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.next-button-box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.next-button-elem {
+    display: block;
+    width: 20px;
+    height: 24px;
+    margin: 17px 18px 0 18px;
+    transform: rotate(180deg);
+    fill: #f0eeef;
+}
+
+.next-button:hover .next-button-box,
+.next-button:focus .next-button-box {
+    transition: 0.4s;
+    transform: translateX(-56px);
+}
+
+/* Button Np Next Page */
+.button-np {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--pink);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 18px;
+    padding: .85rem 2.0rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--dark-pink);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button-np:hover {
+    background-color: #000;
+}
+
+.button-np:hover .button__icon-wrapper {
+    color: #000;
+}
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button-np:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button-np:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+}
+
+
+
+
+
+
+/* =======================================================================
+    specail diet section CSS
+========================================================================== */
+.special-diet-sec{
+    padding: 70px 0;
+}
+.special-diet-sec .left-side .text{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.special-diet-sec .special-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.special-diet-sec .special-item .img-box{
+    margin-right: 25px;
+    transition: 0.3s all ease;
+}
+.special-diet-sec .special-item .img-box svg{
+    transition: 0.3s all ease;
+}
+.special-diet-sec .special-item:hover .img-box svg{
+    transform: scale(1.1);
+}
+.special-diet-sec .special-item:hover .img-box{
+    margin-right: 35px;
+}
+.special-diet-sec .special-item .content-box .title{
+    color: var(--pink);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.special-diet-sec .special-item .content-box .desc{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+/* =======================================================================
+    We are also avaibale at section CSS
+========================================================================== */
+.we-are-available-sec{
+    padding: 70px 0;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+.slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+}
+.slide-track .slide a img{
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: 0.3s all ease;
+}
+.slide-track .slide a:hover img{
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+
+/* =======================================================================
+    Footer CSS
+========================================================================== */
+.footer-top{
+    background-color: var(--white);
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+}
+.footer-top .footer-logo-box a img{
+    width: 200px;
+}
+.footer-top .footer-logo-box .text{
+    color: var(--black);
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.footer-top .footer-social-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-top .footer-social-box a{
+    background-color: transparent;
+    border: 1px solid var(--pink);
+    border-radius: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--pink);
+}
+.footer-top .footer-social-box a:hover{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+
+.main-footer{
+    background-color: var(--pink);
+    padding: 50px 0;
+}
+/* .main-footer .footer-link-box{
+
+} */
+.main-footer .footer-link-box .footer-link-title{
+    color: var(--dark-pink);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.main-footer .footer-link-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-footer .footer-link-box ul li{
+    margin-bottom: 15px;
+}
+.main-footer .footer-link-box ul li a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+.main-footer .footer-link-box ul li a:hover{
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    font-weight: 400;
+}
+
+.footer-bottom{
+    background-color: var(--dark-pink);
+    padding: 20px 0;
+}
+.footer-bottom .copyright-box p{
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer-bottom .copyright-box p a{
+    color: var(--pink);
+    font-weight: 400;
+}
+.footer-bottom .link-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-bottom .link-box a{
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer-bottom .link-box a:hover{
+    color: var(--pink);
+}
 
 
 
@@ -634,11 +1224,13 @@ a {
 }
 .preloader-box{
     background-color: var(--pink);
-    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
     height: 100vh;
     display: none;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .honeycomb {
