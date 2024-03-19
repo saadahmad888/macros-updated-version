@@ -2,7 +2,17 @@
     
 }
 @media only screen and (max-width: 992px){
-
+    .meal-detail-sec .left .detail-item{
+        transform: translateX(0px);
+    }
+    .meal-detail-sec .right .detail-item{
+        transform: translateX(0px);
+    }
+}
+@media only screen and (min-width: 992px){
+    #testimonalModal .modal-dialog{
+        max-width: 900px;
+    }
 }
 @media only screen and (max-width: 768px){
     .main-banner-item .content-box{
@@ -58,9 +68,29 @@
     .new-item-sec{
         padding: 100px 0 40px 0;
     }
+    #testimonalModal .modal-dialog{
+        max-width: 678px;
+    }
+    .sub-pages-banner-sec h1{
+        width: 95%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .sub-pages-banner-sec p{
+        width: 95%;
+        font-size: 16px;
+    }
+    .section-heading h2{
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 576px){
     
+}
+@media only screen and (max-width: 430px){
+    .testimonal-item-modal{
+        padding: 20px 0px;
+    }
 }
 @media only screen and (max-width: 400px){
     .main-banner-item .content-box{

@@ -19,8 +19,28 @@ function myFunction() {
 
 
 
+// // Show the preloader
+// function showPreloader() {
+//   document.getElementById('loader').style.display = 'flex';
+
+//   // Delay hiding the preloader by 2 seconds
+//   setTimeout(hidePreloader, 2000);
+// }
+
+// // Hide the preloader
+// function hidePreloader() {
+//   document.getElementById('loader').style.display = 'none';
+// }
+
+// // Call showPreloader function to show the preloader for at least 2 seconds
+// showPreloader();
+
+
 // Show the preloader
 function showPreloader() {
+  // Disable scrolling
+  document.body.style.overflow = 'hidden';
+
   document.getElementById('loader').style.display = 'flex';
 
   // Delay hiding the preloader by 2 seconds
@@ -29,11 +49,19 @@ function showPreloader() {
 
 // Hide the preloader
 function hidePreloader() {
+  // Enable scrolling
+  document.body.style.overflow = 'auto';
+
   document.getElementById('loader').style.display = 'none';
 }
 
 // Call showPreloader function to show the preloader for at least 2 seconds
 showPreloader();
+
+
+  setTimeout(function() {
+    document.body.style.overflow = 'auto';
+  }, 2000); // Your loading transition's length in miliseconds.
 
 
 

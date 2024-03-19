@@ -14,7 +14,7 @@ body {
     font-family: "Open Sans", sans-serif;
     position: relative;
     /* background-color: var(--black); */
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {
@@ -244,6 +244,10 @@ a {
 
 .section-heading .line.white {
     background-color: var(--white);
+}
+
+.color-pink{
+    color: var(--pink);
 }
 
 
@@ -964,6 +968,626 @@ a {
 
 
 
+
+/* =======================================================================
+    testimonal Section CSS
+========================================================================== */
+.testimonal-sec{
+    padding: 100px 0 90px 0;
+}
+.testimonal-item{
+    background-color: var(--white);
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 5px;
+}
+.testimonal-item .top-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonal-item .top-box .profile-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.testimonal-item .top-box .profile-box .img-box{
+    border: 1.5px solid var(--light-pink);
+    border-radius: 50rem;
+    padding: 1px;
+    margin-right: 10px;
+}
+.testimonal-item .top-box .profile-box .img-box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50rem;
+    object-fit: cover;
+}
+.testimonal-item .top-box .profile-box .name-box p{
+    color: var(--dark-pink);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.testimonal-item .top-box .link-box .next-button{
+    width: 40px;
+    height: 40px;
+}
+.testimonal-item .top-box .link-box .next-button:before{
+    border-color: var(--black);
+    border-width: 2.5px;
+}
+.testimonal-item .top-box .link-box .next-button::after{
+    border-width: 2.5px;
+}
+.testimonal-item .top-box .link-box .next-button-elem{
+    fill: var(--black);
+    width: 13px;
+    height: 16px;
+    margin: 17px 14px 0px;
+}
+.testimonal-item .top-box .link-box .next-button:hover .next-button-box, 
+.testimonal-item .top-box .link-box .next-button:focus .next-button-box{
+    transform: translateX(-39px);
+}
+.testimonal-item .top-box .link-box .next-button:hover .next-button-elem{
+    transform: rotate(140deg);
+}
+.testimonal-item .main-box .rating-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 0 10px 0;
+}
+.testimonal-item .main-box .rating-box i{
+    font-weight: bold;
+    color: #FFDF00;
+    margin-right: 5px;
+}
+.testimonal-item .main-box .rating-box .text{
+    color: var(--dark-pink);
+    font-weight: 600;
+    font-size: 16px;
+}
+.testimonal-item .main-box .desc{
+    color: var(--black);
+    font-size: 14px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+#testimonal-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#testimonal-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
+
+
+
+/* Modal CSS */
+
+.testimonal-item-modal{
+    padding: 50px 60px;
+    position: relative;
+}
+.terminate-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+.testimonal-item-modal .profile-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 25px;
+}
+.testimonal-item-modal .profile-box .img-box{
+    border: 2px solid var(--light-pink);
+    border-radius: 50rem;
+    padding: 1px;
+    margin-right: 15px;
+}
+.testimonal-item-modal .profile-box .img-box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50rem;
+}
+.testimonal-item-modal .profile-box .name-box p{
+    color: var(--dark-pink);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.testimonal-item-modal .profile-box .rating-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.testimonal-item-modal .profile-box .rating-box i{
+    font-weight: bold;
+    color: #FFDF00;
+    margin-right: 5px;
+}
+.testimonal-item-modal .profile-box .rating-box .text{
+    color: var(--dark-pink);
+    font-weight: 600;
+    font-size: 16px;
+}
+.testimonal-item-modal .review-detail{
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+}
+.testimonal-item-modal .review-detail .product-name p{
+    color: var(--dark-pink);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.testimonal-item-modal .review-detail .desc{
+    color: var(--black);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.testimonal-item-modal .review-helpful{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.testimonal-item-modal .review-helpful .text{
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 17px;
+    margin-right: 20px;
+}
+.testimonal-item-modal .review-helpful a{
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.testimonal-item-modal .review-helpful a:hover{
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+/* =======================================================================
+    Sub Pages Banner CSS
+========================================================================== */
+.sub-pages-banner-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(uploads/destinations/H0Yz9eW1ghRSqnS-1690355019.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0;
+    border-bottom: 5px solid var(--pink);
+}
+.sub-pages-banner-sec.weight-loss{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://macros.com.au/cdn/shop/files/macros-weight-loss-plan-1.png');
+}
+.sub-pages-banner-sec h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 70%;
+}
+.sub-pages-banner-sec p{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 60%;
+}
+.sub-pages-banner-sec .primary-btn{
+    border-radius: 50rem;
+    background-color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* =======================================================================
+    Reviews Section CSS
+========================================================================== */
+.reviews-sec{
+    position: relative;
+    padding: 70px 0 90px 0;
+}
+.reviews-sec .review-item{
+    position: relative;
+    background-color: var(--white);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    padding: 30px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px 5px;
+}
+.reviews-sec .review-item .quote-sign{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+.reviews-sec .review-item .quote-sign i{
+    color: var(--pink);
+    font-weight: bold;
+    opacity: 0.3;
+    font-size: 60px;
+}
+.reviews-sec .review-item .name{
+    color: var(--dark-pink);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.reviews-sec .review-item .rating-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.reviews-sec .review-item .rating-box i{
+    font-weight: bold;
+    margin-right: 5px;
+    color: #FFDF00;
+}
+.reviews-sec .review-item .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+.reviews-sec .review-item .desc{
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 0px;
+    height: 72px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#reviews-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#reviews-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* =======================================================================
+    FAQ CSS
+========================================================================== */
+  
+  .process {
+    padding: 70px 0 70px 0;
+  }
+  
+  @media (max-width: 767.98) {
+    .process {
+      padding: 30px 0 30px 0;
+    }
+  }
+  .process__title {
+    flex-shrink: 0;
+  }
+  
+  .process__text {
+    max-width: 18.25rem;
+  }
+  
+  .accordions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  @media (max-width: 479.98px) {
+    .accordions__list {
+      gap: 1.25rem;
+    }
+  }
+  .accordions__item {
+    background-color: var(--light-pink);
+    border-radius: 2.8rem;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    box-shadow: 0px 0.3125rem 0px 0px var(--dark-pink);
+    border: 0.0625rem solid var(--dark-pink);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__item {
+      border-radius: 1.5rem;
+    }
+  }
+  
+  .accordions__control {
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+    width: 100%;
+    position: relative;
+    background-color: var(--light-pink);
+  }
+  
+  @media (max-width: 767.98px) {
+    .accordions__control {
+      padding: 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__control {
+      padding: 20px;
+    }
+  }
+  .accordions__number {
+    font-size: 40px;
+    padding-right: 1.5625rem;
+    font-weight: 500;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__number {
+      font-size: 40px;
+      padding-right: 0.625rem;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__number {
+      font-size: 20px;
+    }
+  }
+  
+  .accordions__title {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    flex: 1 1 auto;
+    display: flex;
+    line-height: 120%;
+    padding-right: 1.25rem;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__title {
+      font-size: 20px;
+    }
+  }
+  
+  .accordions__icon {
+    flex: 0 0 35px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: var(--white);
+    border: 1px solid #191a23;
+    border-radius: 50rem;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon {
+      flex: 0 0 32px;
+      display: flex;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .accordions__icon::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #191a23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon::before {
+      width: 15px;
+      height: 2px;
+    }
+  }
+  
+  .accordions__icon::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #191a23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon::after {
+      width: 15px;
+      height: 2px;
+    }
+  }
+  
+  .accordions__content {
+    padding: 0 60px 0 60px;
+    max-height: 0;
+    overflow: hidden;
+    color: var(--white);
+    will-change: max-height;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    box-sizing: content-box;
+    position: relative;
+    z-index: 5;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__content {
+      padding: 0 30px 0 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__content {
+      padding: 0 20px 0 20px;
+    }
+  }
+  
+  .open .accordions__content {
+    padding: 20px 60px 40px 60px;
+  }
+  @media (max-width: 767.98px) {
+    .open .accordions__content {
+      padding: 20px 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .open .accordions__content {
+      padding: 0px 20px 20px 20px;
+    }
+  }
+  
+  .open {
+    background-color: var(--pink);
+  }
+  
+  .open .accordions__icon {
+    transform: rotate(225deg);
+  }
+
+
+/* =======================================================================
+    Meal Detail Page CSS
+========================================================================== */
+.meal-detail-sec{
+    position: relative;
+    padding: 100px 0 70px 0;
+}
+.meal-detail-sec .img-box img{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.meal-detail-sec .detail-item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--white);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+.meal-detail-sec .left .detail-item{
+    transform: translateX(50px);
+}
+.meal-detail-sec .right .detail-item{
+    transform: translateX(-50px);
+}
+.meal-detail-sec .detail-item .img-box{
+    margin-right: 10px;
+}
+.meal-detail-sec .right .detail-item .img-box{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+/* .meal-detail-sec .detail-item .img-box svg{
+    
+} */
+.meal-detail-sec .detail-item .content-box .title{
+    color: var(--dark-pink);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.meal-detail-sec .detail-item .content-box .desc{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+
+
+/* Plan Option Section */
+.plan-option-sec{
+    padding: 100px 0 90px 0;
+    position: relative;
+}
+.plan-option-sec .plan-option-item{
+    background-color: var(--white);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 15px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 10px 5px;
+}
+.plan-option-sec .plan-option-item .img-box{
+    margin-bottom: 20px;
+}
+.plan-option-sec .plan-option-item .content-box .title{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.plan-option-sec .plan-option-item .content-box .desc{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#plan-option-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#plan-option-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
 
 /* =======================================================================
     Footer CSS
