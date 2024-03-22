@@ -83,9 +83,24 @@
     .section-heading h2{
         font-size: 30px;
     }
+    .menu-category-heading-box{
+        padding: 20px 30px;
+    }
+    .menu-navbar .heading{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu-nav-box{
+        justify-content: center;
+    }
+    .menu-navbar.sticky{
+        top: 57px !important;
+    }
 }
 @media only screen and (max-width: 576px){
-    
+    .ms-form{
+        padding: 30px 20px;
+    }
 }
 @media only screen and (max-width: 430px){
     .testimonal-item-modal{
