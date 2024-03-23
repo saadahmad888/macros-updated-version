@@ -775,6 +775,7 @@ a {
     padding: 20px 30px 10px 30px;
     transform: translateY(100px);
     transition: 0.3s all ease;
+    border-radius: 0 0 15px 15px;
 }
 .snack-card:hover .content-box{
     transform: translateY(0px);
@@ -974,6 +975,7 @@ a {
 ========================================================================== */
 .we-are-available-sec{
     padding: 70px 0;
+    overflow: hidden;
 }
 @keyframes scroll {
     0% {

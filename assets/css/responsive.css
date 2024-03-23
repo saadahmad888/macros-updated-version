@@ -102,6 +102,27 @@
     .main-banner-item .content-box .desc{
         font-size: 16px;
     }
+    .special-diet-sec .special-item{
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .special-diet-sec .special-item .img-box{
+        margin-bottom: 20px;
+    }
+    .special-diet-sec .special-item .img-box svg{
+        height: 50px;
+        width: auto;
+    }
+    .special-diet-sec .section-heading{
+        text-align: center;
+    }
+    .special-diet-sec .section-heading .line{
+        margin-left: auto!important;
+    }
+    .special-diet-sec .left-side .text{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 576px){
     .ms-form{
