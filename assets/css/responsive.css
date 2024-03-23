@@ -31,9 +31,24 @@
         font-size: 14px;
         font-weight: 400;
     }
+    .footer-top .footer-logo-box{
+        margin:  0 auto;
+        text-align: center;
+    }
+    .footer-top .footer-logo-box a img{
+        width: 140px;
+    }
+    .footer-top .footer-logo-box .text{
+        font-size: 20px;
+    }
     .footer-top .footer-social-box{
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+    .footer-top .footer-social-box a{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
     }
     .main-footer .footer-link-box{
         margin-bottom: 20px;
@@ -107,6 +122,13 @@
     .section-heading h2{
         font-size: 30px;
     }
+    .section-heading p{     
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .menu-category-heading-box{
         padding: 20px 30px;
     }
@@ -133,6 +155,11 @@
     }
     .special-diet-sec .special-item .img-box{
         margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .special-diet-sec .special-item:hover .img-box{
+        margin-right: 0;
+        transform: scale(1.1);
     }
     .special-diet-sec .special-item .img-box svg{
         height: 50px;
