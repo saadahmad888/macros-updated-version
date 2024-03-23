@@ -177,6 +177,19 @@
     .slide-track .slide a img{
         width: 100px;
         height: auto;
+        filter: grayscale(0);
+        opacity: 1;
+    }
+    .slide-track {
+        animation: scroll 10s linear infinite;
+    }
+    @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-100px * 7));
+        }
     }
 }
 @media only screen and (max-width: 576px){

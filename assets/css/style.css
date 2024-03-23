@@ -979,7 +979,7 @@ a {
     100% {
       transform: translateX(calc(-250px * 7));
     }
-  }
+}
   
 .slide-track {
     animation: scroll 20s linear infinite;
