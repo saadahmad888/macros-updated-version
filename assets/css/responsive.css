@@ -96,6 +96,12 @@
     .menu-navbar.sticky{
         top: 57px !important;
     }
+    .main-banner-item .content-box .title{
+        font-size: 30px;
+    }
+    .main-banner-item .content-box .desc{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 576px){
     .ms-form{
