@@ -616,6 +616,16 @@ a {
 .favourite-item .content-box .btn-box .next-button-elem{
     fill: var(--black);
 }
+#fav-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#fav-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
+
 
 /* =======================================================================
     New Item section CSS
