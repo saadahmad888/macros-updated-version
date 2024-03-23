@@ -281,23 +281,9 @@ a {
     display: inline-block;
 }
 
-/* .top-nav {
-    background-color: #f0f0f0;
-    overflow: hidden;
-} */
-/* .text-box {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: slideText 10s linear infinite;
-} */
-/* .text-box p {
-    margin: 0;
-    padding: 10px;
-    display: inline-block;
-} */
 @keyframes slideText {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
 /* Main Nav CSS */
