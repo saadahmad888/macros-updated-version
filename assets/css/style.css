@@ -350,14 +350,11 @@ a {
 }
 
 #mobileMenuOffcanvas {
-    /* background: linear-gradient(180deg, #20463B 0%, #266351 100%); */
-    /* background-color: var(--light-pink); */
-    /* background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 217, 242, 1) 100%); */
     background: rgb(132,165,157);
-background: linear-gradient(180deg, rgba(132,165,157,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(132,165,157,1) 0%, rgba(255,255,255,1) 100%);
     /* position: relative; */
     min-height: 100vh;
+    max-height: 100vh;
 }
 
 #mobileMenuOffcanvas .logo-box {
