@@ -1754,6 +1754,16 @@ background: linear-gradient(180deg, rgba(132,165,157,1) 0%, rgba(255,255,255,1) 
     text-overflow: ellipsis;
 }
 
+#support-your-goal-item-slider .owl-dots .owl-dot span{
+    background-color: var(--pink);
+    width: 20px;
+    height: 5px;
+}
+#support-your-goal-item-slider .owl-dots .owl-dot.active span{
+    background-color: var(--dark-pink);
+    width: 40px;
+}
+
 
 
 /* =======================================================================
