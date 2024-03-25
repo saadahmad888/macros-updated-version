@@ -2030,9 +2030,9 @@ background: linear-gradient(180deg, rgba(132,165,157,1) 0%, rgba(255,255,255,1) 
 
 
 
-.porduct-info-box{
+/* .porduct-info-box{
 
-}
+} */
 .porduct-info-box .title{
     color: var(--dark-pink);
     font-size: 30px;
@@ -2212,9 +2212,9 @@ background: linear-gradient(180deg, rgba(132,165,157,1) 0%, rgba(255,255,255,1) 
     font-weight: 600;
     margin-bottom: 20px;
 }
-.desc-box .note{
+/* .desc-box .note{
     
-}
+} */
 
 
 
