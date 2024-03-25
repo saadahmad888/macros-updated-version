@@ -1,7 +1,10 @@
 :root{
-    --pink: #FA9EBC;
-    --light-pink: #FFD9F2;
-    --dark-pink: #570228;
+    /* --pink: #84A59D; */
+    --pink: #84A59D;
+    /* --light-pink: #FFD9F2; */
+    --light-pink: #AFD4CB;
+    /* --dark-pink: #570228; */
+    --dark-pink: #578278;
     --white: #FFF;
     --black: #000;
     --gray: #949494;
