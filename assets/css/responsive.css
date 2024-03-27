@@ -337,6 +337,13 @@
     .ms-form{
         padding: 30px 20px;
     }
+    .meal-plan-new-box::before {
+        background: unset;
+    }
+    
+    .meal-plan-new-box::after {
+        background: unset;
+    }
 }
 @media only screen and (max-width: 430px){
     .testimonal-item-modal{
